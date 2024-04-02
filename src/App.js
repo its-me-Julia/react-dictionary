@@ -1,9 +1,18 @@
 import "./App.css";
+import Dictionary from "./dictionary";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <div className="main-container">
+        <h1>Dictionary</h1>
+        <main>
+          <Dictionary />
+        </main>
+        <footer>
+          Coded by <strong>JuliaD</strong>
+        </footer>
+      </div>
     </div>
   );
 }
