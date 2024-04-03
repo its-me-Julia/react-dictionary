@@ -1,4 +1,16 @@
 .text-start {
+  text-align: start;
+}
+
+.results-main-div {
+  background-color: #d3d3d3;
+}
+
+.results-content-div {
+  background-color: #ffffff;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
   padding: 50px;
   text-align: start;
 }
