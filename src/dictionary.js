@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./dictionary.css";
 import axios from "axios";
 import Results from "./results";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function Dictionary() {
   let [searchValue, setSearchValue] = useState("");
@@ -26,15 +27,23 @@ export default function Dictionary() {
   }
 
   return (
-    <div className="dictionary-main-div">
-      <form onSubmit={startEngine}>
+    <div>
+      <form
+        onSubmit={startEngine}
+        className="dictionary-main-div d-flex justify-content-between"
+      >
         <input
+          className="search-bar col-8 m-auto"
           onChange={handleSearchValue}
           autoFocus={true}
           type="search"
           placeholder="Type a word you want to look up"
         ></input>
-        <input type="submit" value="Search"></input>
+        <input
+          type="submit"
+          value="Search"
+          className="btn btn-light col-3"
+        ></input>
       </form>
       <div className="results-main-div">
         <Results result={result} />
