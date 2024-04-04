@@ -28,23 +28,26 @@ export default function Dictionary() {
 
   return (
     <div>
-      <form
-        onSubmit={startEngine}
-        className="dictionary-main-div d-flex justify-content-between"
-      >
-        <input
-          className="search-bar col-8 m-auto"
-          onChange={handleSearchValue}
-          autoFocus={true}
-          type="search"
-          placeholder="Type a word you want to look up"
-        ></input>
-        <input
-          type="submit"
-          value="Search"
-          className="btn btn-light col-3"
-        ></input>
-      </form>
+      <div className="dictionary-main-div">
+        <h1>Which word do you want to look up?</h1>
+        <form
+          onSubmit={startEngine}
+          className=" d-flex justify-content-between"
+        >
+          <input
+            className="search-bar col-8 m-auto"
+            onChange={handleSearchValue}
+            autoFocus={true}
+            type="search"
+            placeholder="Type a word here"
+          ></input>
+          <input
+            type="submit"
+            value="Search"
+            className="btn btn-light col-3"
+          ></input>
+        </form>
+      </div>
       <div className="results-main-div">
         <Results result={result} />
       </div>
