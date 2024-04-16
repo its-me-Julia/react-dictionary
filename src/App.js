@@ -10,7 +10,16 @@ function App() {
           <Dictionary />
         </main>
         <footer>
-          Coded by <strong>JuliaD</strong>
+          Coded by{" "}
+          <strong>
+            <a
+              href="https://praca-hlada-cloveka.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              JuliaD
+            </a>
+          </strong>
         </footer>
       </div>
     </div>

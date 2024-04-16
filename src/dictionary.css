@@ -63,12 +63,23 @@
 }
 
 .synonyms-main-div li {
+  cursor: pointer;
+  border-radius: 8px;
   display: inline-block;
   list-style: none;
-  padding-right: 10px;
+  padding: 7px 10px;
+  margin-right: 10px;
+  background-color: #ededed;
+  color: rgb(75, 75, 75);
+  transition: 350ms ease-in-out;
+}
+
+.synonyms-main-div li:hover {
+  transform: scale(1.1);
 }
 
 .images-main-div {
+  margin-top: 50px;
   width: 60%;
   margin: auto;
 }
@@ -83,4 +94,41 @@
 .images-main-div img:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .dictionary-main-div {
+    width: 90%;
+  }
+
+  .dictionary-main-div h1 {
+    font-size: 18px;
+  }
+
+  .results-content-div {
+    width: 90%;
+  }
+
+  .meanings-main-div {
+    width: 90%;
+  }
+
+  .definition-example-div {
+    line-height: normal;
+  }
+
+  .images-main-div {
+    width: 90%;
+  }
+
+  .img-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    margin: auto;
+    width: 100%;
+  }
 }

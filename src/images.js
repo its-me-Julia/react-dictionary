@@ -10,11 +10,11 @@ export default function Images(props) {
   if (props.image) {
     console.log(props.image);
     return (
-      <div className="images-main-div mt-3">
-        <div className="row">
+      <div className="images-main-div">
+        <div className="row  img-div">
           {props.image.photos.map(function (photos, index) {
             return (
-              <div className="col-4 mt-3" key={index}>
+              <div className="col-4 mt-3 img" key={index}>
                 <img
                   onClick={showPopUp}
                   className="img-fluid"

@@ -10,4 +10,15 @@
 
 footer {
   margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+footer a {
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+  transition: 350ms all ease-in-out;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
